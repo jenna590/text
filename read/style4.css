@@ -1,0 +1,49 @@
+:root{
+  --clip-position: center;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+p{
+  text-indent: 5%;
+}
+.mask-container div{
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 200vh;
+  -webkit-mask-position:var(--clip-position);
+          mask:url(img/square.png) repeat;
+          mask-size:500px 500px;
+          mask-position:var(--clip-position);
+  -webkit-mask:url(img/square.png) repeat;
+          -webkit-mask-size:500px 500px;
+          -webkit-mask-position:var(--clip-position);
+}
+ #clipped-image{
+  width: 500px;
+  margin: 0 auto;
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: rgb(179, 182, 174);
+}
+.back, .next{
+  position: fixed;
+  color: black;
+  background-color: white;
+  bottom: 0;
+  z-index: 3;
+}
+.back{
+  left: 0;
+}
+.next{
+  right: 0;
+}

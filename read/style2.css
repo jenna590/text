@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+h4{
+  font-size: 16px;
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  width: 200px;
+  color: black;
+  line-height: 1.2em;
+}
+p{
+  text-indent: 5%;
+}
+.note {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bgimage{
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
+  opacity: 20%;
+}
+#important{
+  color: black;
+  position: absolute;
+  top:30%;
+  right: 34%;
+  transform: rotate(-30deg);
+  cursor: move;
+}
+
+#left{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  cursor: move;
+}
+#tilt{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: rotate(30deg);
+  cursor: move;
+}
+#four{
+  position:  absolute;
+  bottom: 30%;
+  left: 45%;
+  transform: rotate(-10deg);
+  cursor: move;
+}
+.back, .next{
+  position: fixed;
+  color: black;
+  background-color: white;
+  bottom: 0;
+}
+.back{
+  left: 0;
+}
+.next{
+  right: 0;
+}

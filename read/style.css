@@ -1,0 +1,108 @@
+:root{
+  --clip-position: center;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.hint{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+}
+.mask-container div{
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  -webkit-mask-position:var(--clip-position);
+          mask:url(img/maskcirc2.png) no-repeat;
+          mask-size:400px 400px;
+          mask-position:var(--clip-position);
+  -webkit-mask:url(img/maskcirc2.png) no-repeat;
+          -webkit-mask-size:400px 400px;
+          -webkit-mask-position:var(--clip-position);
+}
+ #clipped-image{
+   padding: 6%;
+   width: 500px;
+   font-family: 'Times New Roman';
+   font-size: 16px;
+   font-weight: lighter;
+   line-height: 1.4em;
+  color: rgb(179, 182, 174);
+
+}
+p{
+  text-indent: 5%;
+}
+/* .next{
+  transform: rotate(-90deg);
+  width: 40%;
+  filter: contrast(1);
+  position: absolute;
+  bottom: -5%;
+  right: -16%;
+  z-index: 4;
+  opacity: 60%;
+  filter: blur(10px);
+}
+.next:hover{
+  right:0%;
+  opacity: 100%;
+  transition-duration: 2s;
+}
+.back{
+  transform: rotate(90deg);
+  width: 40%;
+  filter: blur(10px);
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  z-index: 4;
+  opacity: 70%;
+}
+.back:hover{
+  left:-18%;
+  opacity: 20%;
+  transition-duration: 2s;
+} */
+.back, .next{
+  position: fixed;
+  color: black;
+  background-color: white;
+  bottom: 0;
+  z-index: 3;
+}
+.back{
+  left: 0;
+}
+.next{
+  right: 0;
+}
+
+/* @media only screen and (max-width: 1100px){
+  .title-words{
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .title-words{
+    font-size: 60px;
+
+  }
+}
+@media only screen and (max-width: 650px){
+  .title-words{
+    font-size: 65px;
+  }
+  .text{
+    padding: 0 6% 0 6%;
+  }
+}

@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p{
+  text-indent: 5%;
+}
+.hint{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+}
+.story{
+  padding-top: 2%;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-evenly;
+ align-items: stretch;
+ font-family: 'Times New Roman';
+ font-weight: lighter;
+ font-size: 16px;
+ line-height: 1.3em;
+ color: black;
+}
+.story:hover{
+  filter: blur(0);
+}
+.writing{
+  padding-top: 15%;
+  width: 500px;
+  margin: 0 auto;
+  vertical-align: center;
+}
+.partone, .parttwo, .partthree, .partfour{
+  width: 250px;
+  filter: blur(5px);
+}
+.partone:hover, .parttwo:hover, .partthree:hover, .partfour:hover{
+  filter: blur(0);
+  transition-duration: 0.5s;
+}
+.back, .next{
+  position: fixed;
+  color: black;
+  background-color: white;
+  bottom: 0;
+  z-index: 3;
+}
+.back{
+  left: 0;
+}
+.next{
+  right: 0;
+}
