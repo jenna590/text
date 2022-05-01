@@ -6,7 +6,7 @@
 body{
   overflow: hidden;
   background: black;
-  cursor: crosshair;
+  cursor: grabbing;
 }
 .cemetary{
   display: flex;
@@ -47,19 +47,15 @@ body{
   z-index: 4;
 } */
 .next{
-  position: absolute;
-  bottom: 6%;
-  right: 6%;
-  color: rgb(117, 124, 153);
-  font-family: 'Helvetica';
+  font-family: 'Times New Roman';
+  font-size: 20px;
   font-weight: 100;
-  font-size: 25px;
-  z-index: 4;
-}
-.next:hover{
-  color: white;
-  transition-duration: 1s;
-  cursor: zoom-in;
+  position: fixed;
+  color: lightgrey;
+  bottom: 5%;
+  z-index: 3;
+  right: 4%;
+  cursor: e-resize;
 }
 .underhand{
   transform:rotate(90deg);
@@ -73,16 +69,4 @@ body{
 canvas{
   position: absolute;
   z-index: 2;
-}
-
-@keyframes opac{
-  0%{
-    opacity: 25%;
-  }
-  50%{
-    opacity: 55%;
-  }
-  100%{
-    opacity: 25%;
-  }
 }

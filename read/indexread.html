@@ -13,14 +13,15 @@
     <!-- text will appear when hover -->
     <!-- <a href="../index.html"><img class="back" src="img/hand2.png"></a>
     <a href="read2index.html"><img class="next" src="img/hand2.png"></a> -->
-    <div class="hint">
-      Hint: scan your mouse to direct the light.
+    <button onclick="toggle()" style="cursor:help">Hint</button>
+    <div id="hint" class="secret">
+      Scan your mouse to direct the light.
     </div>
     <div class="back">
-      <a href="../index.html">back</a>
+      <a href="../index.html" style="cursor: w-resize">back</a>
     </div>
     <div class="next">
-      <a href="read2index.html">next</a>
+      <a href="read2index.html" style="cursor: e-resize">next</a>
     </div>
     <div class="mask-container">
       <div id="clipped-image">

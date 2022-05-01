@@ -6,6 +6,53 @@ body{
   margin: 0;
   padding: 0;
 }
+/* Navigation */
+a{
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+.back, .next{
+  font-size: 20px;
+  position: fixed;
+  bottom: 5%;
+  z-index: 3;
+}
+.back{
+  left: 4%;
+  cursor: w-resize;
+}
+.next{
+  right: 4%;
+  cursor: e-resize;
+}
+/* Hint toggle*/
+button{
+  position: fixed;
+  top:4%;
+  right:3%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding:0;
+  font-family: 'Times New Roman';
+  font-size: 18px;
+  z-index: 4;
+}
+.secret{
+  font-family: 'Times New Roman';
+  font-size: 24px;
+  position: fixed;
+  font-weight: lighter;
+  font-style: italic;
+  top: 15%;
+  right: 20%;
+  color: darkred;
+  z-index: 5;
+  opacity: 0;
+}
+.active{
+  opacity: 90%;
+}
 h4{
   font-size: 16px;
   font-family: 'Times New Roman';
@@ -16,11 +63,6 @@ h4{
 }
 p{
   text-indent: 5%;
-}
-.note {
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 .bgimage{
   width: 100vw;
@@ -56,16 +98,4 @@ p{
   left: 45%;
   transform: rotate(-10deg);
   cursor: move;
-}
-.back, .next{
-  position: fixed;
-  color: black;
-  background-color: white;
-  bottom: 0;
-}
-.back{
-  left: 0;
-}
-.next{
-  right: 0;
 }

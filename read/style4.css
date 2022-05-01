@@ -9,6 +9,23 @@ body{
   margin: 0;
   padding: 0;
 }
+/* Navigation */
+a{
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+.back, .next{
+  font-size: 20px;
+  position: fixed;
+  bottom: 5%;
+  z-index: 3;
+}
+.back{
+  left: 4%;
+}
+.next{
+  right: 4%;
+}
 p{
   text-indent: 5%;
 }
@@ -33,17 +50,4 @@ p{
   font-size: 16px;
   line-height: 1.3em;
   color: rgb(179, 182, 174);
-}
-.back, .next{
-  position: fixed;
-  color: black;
-  background-color: white;
-  bottom: 0;
-  z-index: 3;
-}
-.back{
-  left: 0;
-}
-.next{
-  right: 0;
 }

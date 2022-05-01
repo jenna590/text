@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-  <div class="hint">
-    Hint: scan your mouse in the center of the page.
+  <button onclick="toggle()" style="cursor:help">Hint</button>
+  <div id="hint" class="secret">
+    Move towards the center.
   </div>
   <div class="story" alt="“What’s that alley over there, under the poplars?”
 	The old man squints at the column of trees and says, “Actors’ Row. When it warms up, the young ladies’ll come with their keepsakes, and heaps of flowers, and read aloud to one another from little books: not grand-like, but with respect.”
@@ -56,11 +57,15 @@ Setting aside his shovel, the old man starts to hoist himself out of the pit by 
     <p>“‘Well,’ I thinks, ‘Not likely!’ I barred the way with my arm: ‘It’s not right: dropping dead the dropping in—besides, they’ll catch on to the fact they’re burying nothing. How’d you manage it?’ ‘Well,’ he says, ‘as soon as we began to bump to bump over the potholes, the lid slid sideways—and through the crack a light winked at me: my last light, I thought, my last. I looked back: some were lagging behind and straggling (it’s a long way to your cemetery, grandfather), others were still trudging along, but with their eyes then closed it again and quietly… Let me in, grandfather.’ ‘But your funeral?’ ‘I’ll make it, the hearse can barely turn its wheels, don’t refuse me this last light before the eternal darkness.’ He pleaded with me so, I begun to feel sorry for him. ‘Come in,’ I says ‘only make it quick—then into the pit.’
     </div>
     <div class="back">
-      <a href="read/read2index.html">back</a>
+      <a href="read/read2index.html" style="cursor: w-resize">back</a>
     </div>
     <div class="next">
-      <a href="read/read4index.html">next</a>
+      <a href="read/read4index.html" style="cursor: e-resize">next</a>
     </div>
   </div>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="jquery.marquee.min.js"></script>
+  <script src="functions.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+function toggle() {
+  var secret = document.getElementById("hint");
+  secret.classList.toggle("active");
+}
 const $cImg = $('#clipped-image');
 const $body = $('body');
 
